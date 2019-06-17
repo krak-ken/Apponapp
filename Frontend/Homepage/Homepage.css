@@ -1,0 +1,78 @@
+body{
+    padding-top:56px;
+    background-color:#f3ecec;
+}
+main{
+    margin-left: 202px;
+}
+section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+section div div.card{ 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); 
+}
+#card-img{
+    height: 200px;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+#bookASlot{
+    position: absolute;
+    top: 170px;
+    left: 590px;
+}
+.sidenav a, .dropdown-btn {
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+.active, button:focus {
+    background-color:rgba(0, 0, 0, 0.7);
+    color: white;
+    outline: none;
+    border-left: 2px solid green;
+}
+#sidenav-head {
+    padding: 5px 20px;
+    margin-bottom: 5px;
+}
+.dropdown-container {
+    display: none;
+    padding-left: 10px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    padding-top: 8px;
+}
+.dropdown-container a{
+    color:beige;
+}
+.dropdown-container a:hover{
+    color:rgba(0,200,0,0.5);
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

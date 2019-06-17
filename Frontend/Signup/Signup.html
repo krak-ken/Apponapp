@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../Lib/bootstrap.min.css">
+    <link rel=stylesheet href = "SignUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>APPONApp</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <a class="navbar-brand text-white" href="../Homepage/Homepage.html">APPONApp</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="../Signup/Signup.html">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="../Signin/Signin.html">SignIn</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        
+            <div class="sidenav">
+              <a class="text-white" id="sidenav-head">Professions</a>
+              <button class="dropdown-btn">Services 
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                  <a id="doctors" href="#">Doctors</a>
+                  <a id="lawyers" href="#">Lawyers</a>
+              </div>
+              <button class="dropdown-btn">Utilities 
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                  <a id="maids" href="#">Maids</a>
+                  <a id="drivers" href="#">Drivers</a>
+                  <a id="barbers" href="#">Barbers</a>
+              </div>
+          </div>
+
+        <div class="container" id="form">
+          <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+              <div class="card card-signin my-5">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sign Up</h5>
+                  <form class="form-signin">
+                      <label for="Professions">Choose your Role</label>
+                      <div class="form-label-group">
+                          <select id="profession" class="form-control" onchange="handleChange(this)" name="role" required autofocus>
+                              <option value="users">User</option>
+                              <option value="doctors">Doctor</option>
+                              <option value="lawyers">Lawyer</option>
+                              <option value="barbers">Barber</option>
+                              <option value="maids">Maid</option>
+                              <option value="drivers">Driver</option>
+                          </select>
+                      </div>
+                    <div class="form-label-group">
+                      <input type="text" class="form-control" placeholder="Name" id="name" name="name" onchange="handleChange(this)" required autofocus /> 
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="form-label-group">
+                      <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address" onchange="handleChange(this)" required autofocus>
+                      <label for="inputEmail">Email address</label>
+                    </div>
+                     <div class="form-label-group">
+                     <input type="text" class="form-control" placeholder="Phone" id="number" name="phone" onchange="handleChange(this)" required autofocus />
+                      <label for="number">Phone Number</label>
+                      </div>
+                      <label for="Password">Set your Password</label>
+                    <div class="form-label-group">
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" onchange="handleChange(this)" required>
+                      <label for="inputPassword">Password</label>
+                    </div>
+                    <div id="RolePlaying">
+                      <label for="state">Address</label>
+                       <div class="form-label-group">
+                      <input type="text" id="houseNo" class="form-control" placeholder="House Number" name="houseNo" onchange="handleChange(this)" required autofocus/>
+                      <label for="houseNo">House Number</label>
+                      </div>
+                       <div class="form-label-group">
+                    <input type="text" id="streetAddress" class="form-control" placeholder="Street Address" name="streetAddress" onchange="handleChange(this)" required autofocus/>
+                    <label for="streetAddress">Street Address</label>
+                    </div>
+                     <div class="form-label-group">
+                    <input type="text" id="city" class="form-control"  placeholder="City" name="city" onchange="handleChange(this)" required autofocus />
+                    <label for="city">City</label>
+                    </div>
+                     <div class="form-label-group">
+                    <input type="text" id="state" class="form-control" placeholder="State" name="state" onchange="handleChange(this)" required autofocus />
+                    <label for="state">State</label>
+                    </div>
+                     <div class="form-label-group">
+                    <input type="text" id="zipcode" class="form-control" placeholder="Zip-Code" name="zipcode" onchange="handleChange(this)" required autofocus />
+                    <label for="zipcode">Zip-Code</label>
+                    </div>
+                    <label for="More Details">Additional Details</label>
+                    <div class="form-label-group">
+                    <input type="text" id="expertise" placeholder="Expertise" class="form-control" name="expertise" onchange="handleChange(this)" required autofocus />
+                    <label for="expertise">Your Expertise</label>
+                    </div>
+                    <div class="form-label-group">
+                    <input type="text" id="description" class="form-control" placeholder="Description" name="description" onchange="handleChange(this)" required autofocus />
+                    <label for="description">Description about yourself</label>
+                    </div>
+                    <div class="form-label-group">
+                    <input type="text" id="cost" class="form-control" placeholder="Cost" name="cost" onchange="handleChange(this)" required autofocus/> 
+                    <label for="cost">Fees you Want to set(in numbers only!)</label>
+                    </div>
+                    <label for="Shifts">Shifts</label>
+                     <div class="form-label-group">
+                    <input type="time" id="startshift" class="form-control" placeholder="Shift starting time" name="startShift" onchange="handleChange(this)" required autofocus/> 
+                    <label for="startshift">When do you want to start?</label>
+                    </div>
+                     <div class="form-label-group">
+                    <input type="time" id="endshift" class="form-control" placeholder="Shift ending time" name="endShift" onchange="handleChange(this)" required autofocus/> 
+                    <label for="endshift">Time to end and go?</label>
+                    </div>
+                     <div class="form-label-group">
+                    <input type="number" id="noshifts" class="form-control" placeholder="Number of Shifts" name="noShifts" onchange="handleChange(this)" required autofocus/> 
+                    <label for="noshifts">No of Shifts</label>
+                </div>
+              </div>
+
+                    <button class="btn btn-lg btn-dark btn-block text-uppercase" type="submit" id="submit">Sign Up!</button>
+                    <hr class="my-4">
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="../Lib/jquery-3.4.1.min.js"></script>
+    <script src="../Lib/bootstrap.min.js"></script>
+    <script src="Signup.js"></script>
+</body>
+</html>

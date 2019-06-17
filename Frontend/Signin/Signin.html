@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../Lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet href = "Signin.css">
+    <title>APPONApp</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <a class="navbar-brand text-white" href="../Homepage/Homepage.html">APPONApp</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="../Signup/Signup.html">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="../Signin/Signin.html">SignIn</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <div class="sidenav">
+              <a class="text-white" id="sidenav-head">Professions</a>
+              <button class="dropdown-btn">Services 
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                  <a id="doctors" href="#">Doctors</a>
+                  <a id="lawyers" href="#">Lawyers</a>
+              </div>
+              <button class="dropdown-btn">Utilities 
+                  <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-container">
+                  <a id="maids" href="#">Maids</a>
+                  <a id="drivers" href="#">Drivers</a>
+                  <a id="barbers" href="#">Barbers</a>
+              </div>
+          </div>
+
+        <div class="container" id="form">
+          <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+              <div class="card card-signin my-5">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sign In</h5>
+                  <div class="alert alert-danger" id="Error">
+                    Enter Details.
+                  </div>
+                  <form class="form-signin">
+                    <div class="form-label-group">
+                      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                      <label for="inputEmail">Email address</label>
+                    </div>
+      
+                    <div class="form-label-group">
+                      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                      <label for="inputPassword">Password</label>
+                    </div>
+
+                    <div class="form-label-group">
+                        <select class="form-control" id="role">
+                            <option value="users">User</option>
+                            <option value="doctors">Doctor</option>
+                            <option value="lawyers">Lawyer</option>
+                            <option value="barbers">Barber</option>
+                            <option value="maids">Maid</option>
+                            <option value="drivers">Driver</option>
+                        </select>
+                    </div>
+    
+                    <button class="btn btn-lg btn-dark btn-block text-uppercase" type="submit" id="SignIn">Sign in</button>
+                    <hr class="my-4">
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="../Lib/jquery-3.4.1.min.js"></script>
+    <script src="../Lib/bootstrap.min.js"></script>
+    <script src="Signin.js"></script>
+</body>
+</html>
